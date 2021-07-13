@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./CSS/styles-dist.css">
 </head>
 <body>
-    <h1>Hola mundo!</h1>
-    <button class="backward button" id="backward"></button>
-    <button class="forward button" id="forward"></button>
-    <button class="play button" id="play"></button>
-    <button class="button" hidden id="pause"></button>
-    <video  id="video" src="./videos/lofi.mp4" poster="./images/poster.jpg" controls muted height="300px"></video>
+    <div class="wrapper">
+    <div class="player">
+        <button class="backward button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos" ></button>
+        <button class="play button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+        <button class="button" hidden id="pause" aria-label="Pausar" title="Pausar"></button>
+        <button class="forward button" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos"></button>
+        <video  id="video" src="./videos/lofi.mp4" poster="./images/poster.jpg" controls muted ></video>
+    </div>
+    </div>
     <script>
         const $video = document.querySelector("#video")
         const $play = document.querySelector("#play")
