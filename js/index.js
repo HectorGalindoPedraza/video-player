@@ -33,7 +33,7 @@ $forward.addEventListener("click", handleForward )
     $video.currentTime +=10
     console.log("forward", $video.currentTime)
     }
-    const  $progress = document.querySelector("#progress")
+const  $progress = document.querySelector("#progress")
     $video.addEventListener("loadedmetadata", handleLoaded)
     $video.addEventListener("timeupdate", handleTimeUpdate)
 
@@ -46,7 +46,7 @@ $forward.addEventListener("click", handleForward )
         // console.log("tiempo actual", $video.currentTime)
     }
     $progress.addEventListener("input", handleInput)
-    function handleInput(){
+        function handleInput(){
         $video.currentTime = $progress.value
         console.log($progress.value)
     }
